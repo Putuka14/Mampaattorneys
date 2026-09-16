@@ -29,27 +29,27 @@
 <div class="contact-item"><strong>Office Hours</strong><span>Monday–Friday, 08:00–17:00</span></div>
 <div class="notice" style="margin-top:24px">This website does not constitute legal advice. An attorney-client relationship is not created merely by submitting an online enquiry.</div>
 </div>
-<form id="contactForm">
-    <label>
-        Full Name
-        <input type="text" name="name" required>
-    </label>
-    <label>
-        Phone
-        <input type="tel" name="phone" required>
-    </label>
-    <label>
-        Email
-        <input type="email" name="email" required>
-    </label>
-    <label>
-        Your Enquiry
-        <textarea name="message" rows="5" required></textarea>
-    </label>
-    <button type="submit">
-        Send Enquiry on WhatsApp
-    </button>
-</form>
+    <form class="contact-form" id="contactForm">
+      <h3>Send an Enquiry</h3>
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" required placeholder="Your full name">
+      <label for="phone">Phone / WhatsApp</label>
+      <input id="phone" name="phone" type="tel" required placeholder="e.g. +27695849718">
+      <label for="service">Service</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option>Labour & Employment Law</option>
+        <option>Road Accident Fund</option>
+        <option>Administration of Deceased Estate</option>
+        <option>Civil Litigations& Unlawful Arrest</option>
+        <option>Family Law</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Tell us what you need..."></textarea>
+
+      <button class="btn btn-gold full" type="submit">Send via WhatsApp</button>
+         </form>
+  </div>
 </div></section>
 
 <footer>
