@@ -29,14 +29,27 @@
 <div class="contact-item"><strong>Office Hours</strong><span>Monday–Friday, 08:00–17:00</span></div>
 <div class="notice" style="margin-top:24px">This website does not constitute legal advice. An attorney-client relationship is not created merely by submitting an online enquiry.</div>
 </div>
-<div class="card"><h3>Send an Enquiry</h3><form id="contactForm">
-<div class="form-row"><label>Full Name<input required name="name" placeholder="Your name"></label><label>Phone<input required name="phone" placeholder="+27 ..."></label></div>
-<label>Email<input required type="email" name="email" placeholder="you@example.com"></label>
-<label>Type of Matter<select name="matter"><option>General Enquiry</option><option>Commercial / Corporate</option><option>Civil Litigation</option><option>Property</option><option>Family Law</option><option>Labour / Employment</option><option>RAF & MVA</option></select></label>
-<label>Message<textarea required name="message" placeholder="Briefly describe how we can assist..."></textarea></label>
-<button class="btn btn-gold" type="submit">Submit Enquiry</button>
-<div id="formStatus" class="notice" style="display:none"></div>
-</form></div>
+<form id="contactForm">
+    <label>
+        Full Name
+        <input type="text" name="name" required>
+    </label>
+    <label>
+        Phone
+        <input type="tel" name="phone" required>
+    </label>
+    <label>
+        Email
+        <input type="email" name="email" required>
+    </label>
+    <label>
+        Your Enquiry
+        <textarea name="message" rows="5" required></textarea>
+    </label>
+    <button type="submit">
+        Send Enquiry on WhatsApp
+    </button>
+</form>
 </div></section>
 
 <footer>
