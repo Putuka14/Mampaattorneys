@@ -20,7 +20,7 @@ img{max-width:100%;display:block}
 .topbar .container{display:flex;justify-content:space-between;gap:20px;padding:8px 0}
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
 .nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:30px}
-.logo{width:90px;height:auto;object-fit:contain}
+.logo{width:90px;height:auto;object-fit:contain; display: block;}
 .nav-links{display:flex;align-items:center;gap:26px;font-weight:700;font-size:.94rem}
 .nav-links a{position:relative;padding:30px 0}
 .nav-links a:after{content:"";position:absolute;left:0;bottom:21px;width:0;height:2px;background:var(--gold);transition:.3s}
