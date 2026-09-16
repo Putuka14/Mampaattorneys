@@ -104,23 +104,124 @@ footer a:hover{color:var(--gold-light)}
   .hero-content{padding:55px 0}
   h1{font-size:2.65rem}
 }
-/* Mobile - default */
+/* ================================
+   PROFESSIONAL SERVICES GRID
+================================ */
+
 .services-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-/* Tablet */
-@media (min-width: 768px) {
+/* Service Card */
+.services-grid .service-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+/* Hover Effect */
+.services-grid .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border-color: #1e3a5f;
+}
+
+/* Service Icon */
+.services-grid .service-card i {
+    font-size: 38px;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+/* Service Heading */
+.services-grid .service-card h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+/* Service Description */
+.services-grid .service-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (min-width: 600px) {
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
     }
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
+/* ================================
+   DESKTOP
+================================ */
+
+@media (min-width: 992px) {
     .services-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    .services-grid .service-card {
+        padding: 35px 30px;
+    }
+}
+
+/* ================================
+   LARGE DESKTOP
+================================ */
+
+@media (min-width: 1200px) {
+    .services-grid {
+        gap: 32px;
+    }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 15px 10px;
+    }
+
+    .services-grid .service-card {
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+    .services-grid .service-card i {
+        font-size: 34px;
+    }
+
+    .services-grid .service-card h3 {
+        font-size: 18px;
+    }
+
+    .services-grid .service-card p {
+        font-size: 14px;
     }
 }
